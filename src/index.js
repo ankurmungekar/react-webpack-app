@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SitePerfomance from './containers/SitePerfomance';
 
 const App = () => {
   return (
-    <h1>Welcome to REACT Micro Frontend</h1>
+    <div>
+      <h1>Welcome to React Micro Frontend</h1>
+      <SitePerfomance />
+    </div>
   );
 }
 
