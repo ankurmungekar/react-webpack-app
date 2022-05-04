@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Button = () => {
+const Button = ({ loading, onClickHandler }) => {
   return (
-    <input type="button" value="start" />
+    <input className="btn btn-primary" type="button" value={loading ? "loading" : "Start"} onClick={onClickHandler} />
   )
 }
 
