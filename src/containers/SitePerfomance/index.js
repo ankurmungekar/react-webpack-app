@@ -1,7 +1,8 @@
 import React from 'react'
 import Button from '../../components/Button'
 
-const SitePerfomance = () => {
+const SitePerfomance = ({ data }) => {
+  console.log(data);
   return (
     <div>
       <div>Site Performance</div>
