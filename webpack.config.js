@@ -19,17 +19,21 @@ module.exports = {
       loader: 'babel-loader',
       test: /\.js$/,
       exclude: /node_modules/
-    }]
+    },
+    {
+      test: /\.(scss|css)$/,
+      use: ['style-loader', 'css-loader', 'sass-loader'],
+    },]
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
     new ModuleFederationPlugin({
-      name: 'sitePerfomanceMfe',
+      name: 'sitePerformanceMfe',
       filename: 'sitePerformanceMfe.js',
       exposes: {
-        './sitePerformanceMfe': './src/containers/SitePerfomance/index.js',
+        './sitePerformanceMfe': './src/containers/SitePerformance/index.js',
       },
     }),
   ],

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SitePerfomance from './containers/SitePerfomance';
+import SitePerformance from './containers/SitePerformance';
 
 const App = () => {
   const data = {
@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       <h1>Welcome to React Micro Frontend</h1>
-      <SitePerfomance data={data} />
+      <SitePerformance data={data} />
     </div>
   );
 }
